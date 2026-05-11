@@ -5,7 +5,7 @@ const erData = [
             { type: "checkpoint", description: "Arrive in Limgrave, speak to White Mask Varré, and avoid the Tree Sentinel.", checked: false },
             { type: "checkpoint", description: "Rest at Gatefront Ruins to meet Melina, receive Torrent (your spectral steed), and gain the ability to level up.", checked: false },
             { type: "checkpoint", description: "Return to the Church of Elleh at night to meet Renna (Ranni) and receive the Spirit Calling Bell and Lone Wolf Ashes.", checked: false },
-            { type: "npc", description: "Speak to Roderika at Stormhill Shack and receive the Jellyfish Ashes.", checked: false },
+            { type: "npc", description: "Speak to Roderika at Stormhill Shack and receive the Jellyfish Ashes.", location: "Stormhill Shack", checked: false },
             { type: "boss", description: "Defeat Margit, the Fell Omen at the entrance to Stormveil Castle. You can use Margit's Shackle to make phase 1 easier.", imageUrl: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/margit_the_fell_omen_bosses_elden_ring_wiki_guide_300px.jpg", checked: false },
             { type: "boss", description: "Defeat Leonine Misbegotten at Castle Morne in the Weeping Peninsula (Trophy/Achievement).", checked: false },
             { type: "boss", description: "Defeat Godrick the Grafted in Stormveil Castle. (Trophy/Achievement: Shardbearer Godrick). Restore his Great Rune at the Divine Tower of Limgrave.", imageUrl: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_the_grafted_bosses_elden_ring_wiki_guide_300px.jpg", checked: false }
@@ -14,12 +14,12 @@ const erData = [
     {
         area: "Liurnia of the Lakes",
         tasks: [
-            { type: "npc", description: "Meet Sorcerer Thops at the Church of Irith.", checked: false },
+            { type: "npc", description: "Meet Sorcerer Thops at the Church of Irith.", location: "Church of Irith", checked: false },
             { type: "item", description: "Find the Academy Glintstone Key behind the sleeping Glintstone Dragon Smarag.", checked: false },
             { type: "boss", description: "Defeat Red Wolf of Radagon in the Raya Lucaria Academy. (Trophy/Achievement).", checked: false },
             { type: "boss", description: "Defeat Rennala, Queen of the Full Moon. Phase 1: Hit the glowing scholars. Phase 2: Dodge her spells. (Trophy/Achievement: Shardbearer Rennala).", imageUrl: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rennala_queen_of_the_full_moon_bosses_elden_ring_wiki_guide_300px.jpg", checked: false },
-            { type: "npc", description: "Proceed to Caria Manor and defeat Royal Knight Loretta (Trophy/Achievement).", checked: false },
-            { type: "npc", description: "Meet Ranni the Witch at Ranni's Rise to begin her massive questline (Required for the Age of Stars ending).", checked: false }
+            { type: "npc", description: "Proceed to Caria Manor and defeat Royal Knight Loretta (Trophy/Achievement).", location: "Caria Manor", checked: false },
+            { type: "npc", description: "Meet Ranni the Witch at Ranni's Rise to begin her massive questline (Required for the Age of Stars ending).", location: "Ranni's Rise", checked: false }
         ]
     },
     {
@@ -28,7 +28,7 @@ const erData = [
             { type: "checkpoint", description: "Travel to Caelid. Be warned, the enemies here hit hard and inflict Scarlet Rot.", checked: false },
             { type: "boss", description: "Defeat Starscourge Radahn at Redmane Castle. Summon the festival NPCs to help. (Trophy/Achievement: Shardbearer Radahn). Restore his rune at the Divine Tower of Caelid.", imageUrl: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/starscourge_radahn_bosses_elden_ring_wiki_guide_300px.jpg", checked: false },
             { type: "boss", description: "Defeat Commander O'Neil in the Swamp of Aeonia to get the Unalloyed Gold Needle for Millicent's quest.", checked: false },
-            { type: "npc", description: "Give the needle to Millicent at the Church of the Plague to start her questline.", checked: false }
+            { type: "npc", description: "Give the needle to Millicent at the Church of the Plague to start her questline.", location: "Church of the Plague", checked: false }
         ]
     },
     {
@@ -48,7 +48,7 @@ const erData = [
             { type: "action", description: "Reach Altus Plateau via the Grand Lift of Dectus (requires finding both medallion halves in Limgrave and Caelid) or the Ruin-Strewn Precipice.", checked: false },
             { type: "boss", description: "Defeat Magma Wyrm Makar if using the Ruin-Strewn Precipice route (Trophy/Achievement).", checked: false },
             { type: "boss", description: "Defeat Elemer of the Briar at the Shaded Castle (Trophy/Achievement).", checked: false },
-            { type: "npc", description: "Join the Volcano Manor faction and complete the assassination contracts, OR explore the legacy dungeon.", checked: false },
+            { type: "npc", description: "Join the Volcano Manor faction and complete the assassination contracts, OR explore the legacy dungeon.", location: "Volcano Manor", checked: false },
             { type: "boss", description: "Defeat Godskin Noble in Volcano Manor (Trophy/Achievement).", checked: false },
             { type: "boss", description: "Defeat Rykard, Lord of Blasphemy using the Serpent-Hunter spear found in the arena. (Trophy/Achievement: Shardbearer Rykard).", checked: false }
         ]
@@ -104,14 +104,14 @@ const erData = [
             { type: "item", description: "Collect Scadutree Fragments and Revered Spirit Ashes to level up your DLC attack and defense stats.", checked: false },
             { type: "boss", description: "Defeat the Divine Dancing Lion in Belurat, Tower Settlement.", checked: false },
             { type: "boss", description: "Defeat Rellana, Twin Moon Knight in Castle Ensis to access Scadu Altus.", checked: false },
-            { type: "npc", description: "Find and speak to Needle Knight Leda, Hornsent, Moore, and Thiollier.", checked: false }
+            { type: "npc", description: "Find and speak to Needle Knight Leda, Hornsent, Moore, and Thiollier.", location: "Scadu Altus", checked: false }
         ]
     },
     {
         area: "DLC: Shadow of the Erdtree (Cerulean Coast, Charo's Hidden Grave, Jagged Peak)",
         tasks: [
             { type: "boss", description: "Defeat the Putrescent Knight at the bottom of the Stone Coffin Fissure.", checked: false },
-            { type: "npc", description: "Speak to St. Trina after the Putrescent Knight fight. Imbibe her nectar repeatedly to progress Thiollier's quest.", checked: false },
+            { type: "npc", description: "Speak to St. Trina after the Putrescent Knight fight. Imbibe her nectar repeatedly to progress Thiollier's quest.", location: "Stone Coffin Fissure", checked: false },
             { type: "boss", description: "Ascend the Jagged Peak and defeat Bayle the Dread. Summon Igon for an epic fight.", checked: false }
         ]
     },
